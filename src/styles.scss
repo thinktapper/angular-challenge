@@ -1,0 +1,15 @@
+@import './variables.scss';
+@import './fonts.scss';
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+  font-family: 'WorkSans';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'SpaceMono';
+}
+
+h1 {
+  font-size: 2.75em;
+}

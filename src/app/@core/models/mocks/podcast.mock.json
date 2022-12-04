@@ -1,0 +1,21 @@
+{
+  "id": "49b3e8357a644abfa6d45b95b57a5637",
+  "title": "Mock Podcast",
+  "publisher": "Mock Podcast Publisher",
+  "image": "https://cdn-images-1.listennotes.com/podcasts/alexa-stop-podcast-robert-belgrave-jim-bowes-5f2IEtTmaYv-5jn9XD-Irgu.300x300.jpg",
+  "thumbnail": "https://cdn-images-1.listennotes.com/podcasts/alexa-stop-podcast-robert-belgrave-jim-bowes-5f2IEtTmaYv-5jn9XD-Irgu.300x300.jpg",
+  "listennotes_url": "https://www.listennotes.com/c/49b3e8357a644abfa6d45b95b57a5637/",
+  "total_episodes": 26,
+  "description": "Mock podcast description.",
+  "itunes_id": 1223829037,
+  "rss": "",
+  "language": "English",
+  "country": "United Kingdom",
+  "website": "https://anchor.fm/alexa-stop-podcast?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+  "is_claimed": false,
+  "type": "episodic",
+  "genre_ids": [
+    140,
+    127
+  ]
+}

@@ -1,0 +1,3 @@
+<div class="podcasts__container">
+  <podcast-listing *ngFor="let podcast of podcasts | slice:0:5; let i = index" [podcast]="podcast" [index]="i"></podcast-listing>
+</div>

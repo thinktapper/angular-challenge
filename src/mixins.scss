@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+@mixin box-shadow($horizontal: 0, $verticle: 0, $no-top: 0)
+{
+  @if $no-top == 1 {
+    $alpha: ($box-shadow-alpha/2);
+    $box-shadow-color: rgba($box-shadow-red, $box-shadow-blue, $box-shadow-green, $alpha);
+    -webkit-box-shadow: ($box-shadow-blur/2) ($box-shadow-blur/2) ($box-shadow-blur/2) $box-shadow-color;
+    -moz-box-shadow: ($box-shadow-blur/2) ($box-shadow-blur/2) ($box-shadow-blur/2) $box-shadow-color;
+    box-shadow: ($box-shadow-blur/2) ($box-shadow-blur/2) ($box-shadow-blur/2) $box-shadow-color;
+  } @else {
+    $box-shadow-color: rgba($box-shadow-red, $box-shadow-blue, $box-shadow-green, $box-shadow-alpha);
+    -webkit-box-shadow: $horizontal $verticle $box-shadow-blur $box-shadow-color;
+    -moz-box-shadow: $horizontal $verticle $box-shadow-blur $box-shadow-color;
+    box-shadow: $horizontal $verticle $box-shadow-blur $box-shadow-color;
+  }
+}

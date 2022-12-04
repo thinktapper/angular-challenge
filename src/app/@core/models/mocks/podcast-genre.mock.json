@@ -1,0 +1,12 @@
+{
+  "id": 140,
+  "name": "Mock Genre",
+  "podcasts": [ ],
+  "total": 20,
+  "has_next": true,
+  "has_previous": false,
+  "page_number": 1,
+  "previous_page_number": 0,
+  "next_page_number": 2,
+  "listennotes_url": "https://www.listennotes.com/best-web-design-podcasts-140/"
+}
