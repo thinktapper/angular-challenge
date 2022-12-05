@@ -1,10 +1,31 @@
-<article class="podcast__container">
-  <p>Podcast details will go in here, including</p>
-  <ul>
-    <li>thumbnail image</li>
-    <li>podcast publisher(s) that will call viewPodcast()</li>
-    <li>episode count</li>
-    <li>links to iTunes, the podcast Website, and an RSS feed (if available)</li>
-    <li>podcast description</li>
-  </ul>
-</article>
+<div class="card">
+    <div class="index">{{ index + 1 }}</div>
+    <div class="header">
+        <img class="thumbnail" [src]="podcast.thumbnail" />
+        <span class="info">
+            <div class="title">{{ podcast.title }}</div>
+            <div class="credits">
+                by <span class="publisher">{{ podcast.publisher }}</span>
+            </div>
+            <div class="episodes">{{ podcast.total_episodes }} episodes</div>
+            <div class="divider"></div>
+            <div class="links">
+                <a
+                    [href]="
+                        'https://podcasts.apple.com/us/podcast/id' +
+                        podcast.itunes_id
+                    "
+                    target="_blank"
+                    ><img src="assets/images/apple.svg" />ITUNES</a
+                >
+                <a [href]="podcast.website" target="_blank"
+                    ><img src="assets/images/link.svg" />WEB</a
+                >
+                <a [href]="podcast.rss"
+                    ><img src="assets/images/rss.svg" />RSS</a
+                >
+            </div>
+        </span>
+    </div>
+    <div class="description">{{ podcast.description }}</div>
+</div>
