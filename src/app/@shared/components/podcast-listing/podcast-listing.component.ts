@@ -1,21 +1,19 @@
-import { Component, Input, ViewEncapsulation } from "@angular/core";
-import { Podcast } from "@core/models/podcast";
+import { Component, Input, ViewEncapsulation } from '@angular/core'
+import { Podcast } from '@core/models/podcast'
 
 @Component({
   selector: 'podcast-listing',
   templateUrl: './podcast-listing.component.html',
-  styleUrls: [ './podcast-listing.component.scss' ],
-  encapsulation: ViewEncapsulation.None
+  styleUrls: ['./podcast-listing.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class PodcastListingComponent {
+  @Input('podcast') podcast!: Podcast
+  @Input('index') index!: number
 
-  @Input('podcast') podcast!: Podcast;
-  @Input('index') index!: number;
+  constructor() {}
 
-  constructor(){}
-
-  viewPodcast()
-  {
-    return false;
+  viewPodcast() {
+    return false
   }
 }
