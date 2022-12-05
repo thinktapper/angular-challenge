@@ -10,6 +10,7 @@ import { Podcast } from '@core/models/podcast'
 export class PodcastListingComponent {
   @Input('podcast') podcast!: Podcast
   @Input('index') index!: number
+  @Input('podNum') podNum!: number
 
   constructor() {}
 

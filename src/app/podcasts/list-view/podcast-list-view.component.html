@@ -1,5 +1,4 @@
 <div class="podcasts__container">
-    <!-- <podcast-listing *ngFor="let podcast of podcasts | slice:0:5; let i = index" [podcast]="podcast" [index]="i"></podcast-listing> -->
     <podcast-listing
         *ngFor="
             let podcast of podcasts
@@ -7,6 +6,7 @@
             let i = index
         "
         [podcast]="podcast"
+        [podNum]="podcasts.indexOf(podcast) + 1"
         [index]="i"></podcast-listing>
     <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>
