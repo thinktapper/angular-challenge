@@ -136,8 +136,32 @@ $bp-widescreen: 1200px;
   .info {
     margin-left: -30px;
   }
-  .number {
+  .index {
     left: -110px;
     top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 15px;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .thumbnail {
+    transform: translateX(0);
+    margin-bottom: 15px;
+  }
+  .info {
+    margin-left: 0;
+  }
+  .description {
+    margin-left: 0;
+  }
+  .index {
+    left: 0;
+    top: -25px;
   }
 }
