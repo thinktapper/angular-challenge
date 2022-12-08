@@ -1,15 +1,15 @@
-<div class="card">
+<article class="card">
     <div class="index">{{ podNum }}</div>
-    <div class="header">
+    <header class="header">
         <img class="thumbnail" [src]="podcast.thumbnail" />
-        <span class="info">
-            <div class="title">{{ podcast.title }}</div>
-            <div class="credits">
+        <section class="info">
+            <h1 class="title">{{ podcast.title }}</h1>
+            <h2 class="credits">
                 by <span class="publisher">{{ podcast.publisher }}</span>
-            </div>
-            <div class="episodes">{{ podcast.total_episodes }} episodes</div>
+            </h2>
+            <h4 class="episodes">{{ podcast.total_episodes }} episodes</h4>
             <div class="divider"></div>
-            <div class="links">
+            <span class="links">
                 <a
                     [href]="
                         'https://podcasts.apple.com/us/podcast/id' +
@@ -24,8 +24,8 @@
                 <a [href]="podcast.rss"
                     ><img src="assets/images/rss.svg" />RSS</a
                 >
-            </div>
-        </span>
-    </div>
-    <div class="description">{{ podcast.description }}</div>
-</div>
+            </span>
+        </section>
+    </header>
+    <h3 class="description">{{ podcast.description }}</h3>
+</article>
